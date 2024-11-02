@@ -45,12 +45,12 @@
     },
     {
       "type": "text",
-      "title": "New Era",
+      "title": null,
       "content": "Humanity finally reached level 5. Things happen faster and faster. AI explores new rules in physics every day. For the first time in the history of humanity, the sky's the limit. A new era is starting. The era of intelligence. "
     },
     {
       "type": "timeline",
-      "title": "Project Timeline",
+      "title": "Timeline",
       "events": [
         {
           "title": "OpenAI released o1, reaching level 2 of AI.",
@@ -82,7 +82,7 @@
     },
     {
       "type": "text",
-      "title": "Chaos and Wealth Age",
+      "title": null,
       "content": "Once humanity reached level 3, there was chaos. Hundreds of millions of people were fired from their jobs just because AI is doing better than them. Money loses meaning. Levels 4 and 5 were reached easily by AGI, and that was the start of the wealth age. AI solved global warming . A little after it discovered a new way to move in space, called “Space Jump” that was faster than the speed of light. The funny thing is that it took all physics experts THREE MONTHS to understand how this tech worked. \n \n For the first time in history, humanity can move from earth to a better place. After discovering the Space Jump method, we sent millions of spacecraft engineered by ASI to map our galaxy. After a few months (!) we had a lot of better alternatives to earth. We finally choose a star, and call it Orion. And anything else is history."
     },
     {
