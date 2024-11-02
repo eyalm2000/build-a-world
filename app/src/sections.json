@@ -1,0 +1,108 @@
+{
+  "sections": [
+    {
+      "type": "text",
+      "title": "Introduction",
+      "content": "OpenAI, the creator of the GPT model family, as known as ChatGPT, introduced a few years ago a list of goals to Artificial Superintelligence (ASI), which is AI that can replace huge organizations, like Google and Apple, think better than humans, make breakthroughs in physics, math, and science, and finally can develop and improve itself."
+    },
+    {
+      "type": "steps",
+      "title": "OpenAI's 5 Steps to ASI",
+      "steps": [
+        {
+          "title": "1. Chatbots, AI with conversational language",
+          "description": "Just the basics. An LLM (Large Language Model) that can write words, sentences, and paragraphs. For example, GPT-4.",
+          "status": "Reached a few years ago",
+          "color": "bg-blue-100",
+          "hoverColor": "bg-blue-200"
+        },
+        {
+          "title": "2. Reasoners, human-level problem solving",
+          "description": "It's more than just writing words. Reasoning means thinking. Making plans.",
+          "status": "Reached on 12 September 2024 by OpenAI o1 model. This model can solve PhD-level problems.",
+          "color": "bg-green-100",
+          "hoverColor": "bg-green-200"
+        },
+        {
+          "title": "3. Agents, systems that can take actions",
+          "description": "An AI that is not just thinking; it is living on the computer. It can take continuous actions and run for minutes, days, weeks, and months. For example, you can ask it if time travel is possible, and it will download all the researches on the internet about it, read them, then email famous scientists about it, read their opinion (and write then thank you emails back), write for you key points, make conclusions, and then will return you a complex answer.",
+          "color": "bg-yellow-100",
+          "hoverColor": "bg-yellow-200"
+        },
+        {
+          "title": "4. Innovators, AI that can aid in invention",
+          "description": "This kind of AI can invent new technology, devices, languages, or anything else you can imagine. ",
+          "color": "bg-orange-100",
+          "hoverColor": "bg-orange-200"
+        },
+        {
+          "title": "5. Organizations: AI that can do the work of an organization",
+          "description": "An AI that can replace organization with thousands of employes. \n This is the level of ASI. An AI that can think, innovate new things and products, write programs with millions of lines of code, and can change the world.",
+          "color": "bg-red-100",
+          "hoverColor": "bg-red-200"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "New Era",
+      "content": "Humanity finally reached level 5. Things happen faster and faster. AI explores new rules in physics every day. For the first time in the history of humanity, the sky's the limit. A new era is starting. The era of intelligence. "
+    },
+    {
+      "type": "timeline",
+      "title": "Project Timeline",
+      "events": [
+        {
+          "title": "OpenAI released o1, reaching level 2 of AI.",
+          "date": "September 2024"
+        },
+        {
+          "title": "OpenAI reached AGI.",
+          "description": "AGI, or Artificial general intelligence, is a level of AI that can think like a human.",
+          "date": "May 2025"
+        },
+        {
+          "title": "AGI reached basic ASI.",
+          "description": "ASI, or Artificial superintelligence, is a level of AI that can replace huge organizations.",
+          "date": "September 2026"
+        },
+        {
+          "title": "ASI solved global warming.",
+          "date": "December 2026"
+        },
+        {
+          "title": "ASI discovered the space jump method.",
+          "date": "January 2029"
+        },
+        {
+          "title": "All of humanity moves to Orion.",
+          "date": "March 2029"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Chaos and Wealth Age",
+      "content": "Once humanity reached level 3, there was chaos. Hundreds of millions of people were fired from their jobs just because AI is doing better than them. Money loses meaning. Levels 4 and 5 were reached easily by AGI, and that was the start of the wealth age. AI solved global warming . A little after it discovered a new way to move in space, called “Space Jump” that was faster than the speed of light. The funny thing is that it took all physics experts THREE MONTHS to understand how this tech worked. \n For the first time in history, humanity can move from earth to a better place. After discovering the Space Jump method, we sent millions of spacecraft engineered by ASI to map our galaxy. After a few months (!) we had a lot of better alternatives to earth. We finally choose a star, and call it Orion. And anything else is history."
+    },
+    {
+      "type": "image",
+      "title": "Orion Map",
+      "png": "/build-a-world/e.webp"
+    },
+    {
+      "type": "text",
+      "title": "Life in Orion",
+      "content": "In Orion, traditional phones are unnecessary. Instead, people use smart eye lenses called 'Y'...\n  \n 122"
+    },
+    {
+      "type": "table",
+      "title": "Project Milestones",
+      "headers": ["Milestone", "Description", "Date"],
+      "rows": [
+        ["Start", "Project kickoff", "January 2023"],
+        ["Development", "Core features development", "March 2023"]
+      ]
+    }
+  ]
+}

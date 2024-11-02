@@ -1,0 +1,95 @@
+{
+  "sections": [
+    {
+      "type": "text",
+      "title": "Introduction",
+      "content": "OpenAI, the creator of the GPT model family, introduced a list of goals to Artificial Superintelligence (ASI)..."
+    },
+    {
+      "type": "image",
+      "title": "Orion Map",
+      "png": "/build-a-world/e.webp"
+    },
+    {
+      "type": "steps",
+      "title": "OpenAI's 5 Steps to ASI",
+      "steps": [
+        {
+          "title": "1. Chatbots - Conversational AI",
+          "description": "Just the basics - an LLM that can write words, sentences, and paragraphs.",
+          "status": "Reached a few years ago",
+          "color": "bg-blue-100",
+          "hoverColor": "bg-blue-200"
+        },
+        {
+          "title": "2. Reasoners - Problem Solvers",
+          "description": "More than just writing words - it means thinking and making plans.",
+          "status": "Reached on 12 September 2024",
+          "color": "bg-green-100",
+          "hoverColor": "bg-green-200"
+        },
+        {
+          "title": "3. Agents - Action Takers",
+          "description": "Systems that can take continuous actions and run for extended periods.",
+          "status": "Current frontier",
+          "color": "bg-yellow-100",
+          "hoverColor": "bg-yellow-200"
+        },
+        {
+          "title": "4. Innovators - Creators",
+          "description": "AI that can invent new technology, devices, languages, or anything imaginable.",
+          "status": "Future goal",
+          "color": "bg-orange-100",
+          "hoverColor": "bg-orange-200"
+        },
+        {
+          "title": "5. Organizational AI - World Changers",
+          "description": "AI that can think, innovate, and change the world at an organizational scale.",
+          "status": "Ultimate goal",
+          "color": "bg-red-100",
+          "hoverColor": "bg-red-200"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": null,
+      "content": "In Orion, traditional phones are unnecessary. Instead, people use smart eye lenses called 'Y'...\n  \n 122"
+    },
+    {
+      "type": "timeline",
+      "title": "Project Timeline",
+      "events": [
+        {
+          "title": "Phase 1 - Project Kickoff",
+          "description": "Initial project setup and planning.",
+          "date": "January 2023"
+        },
+        {
+          "title": "Phase 2",
+          "description": "Development of core features.",
+          "date": "March 2023"
+        },
+        {
+          "title": "Phase 3",
+          "description": "Testing and bug fixing.",
+          "date": "June 2023"
+        },
+        {
+          "title": "Phase 4",
+          "description": "Final release and deployment.",
+          "date": "September 2023"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Project Milestones",
+      "headers": ["Milestone", "Description", "Date"],
+      "rows": [
+        ["Start", "Project kickoff", "January 2023"],
+        ["Development", "Core features development", "March 2023"]
+      ]
+    }
+  ]
+}
