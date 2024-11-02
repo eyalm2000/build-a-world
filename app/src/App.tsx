@@ -47,7 +47,6 @@ const renderSection = (
 
   switch (section.type) {
     case 'timeline':
-      // Updated timeline component with enhanced animations and design tweaks
       return (
         <motion.section
           className="mb-8"
@@ -56,40 +55,48 @@ const renderSection = (
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
+          <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
             {section.title && (
-              <h2 className="text-3xl font-bold text-amber-900 mb-6">
+              <h2 className="text-3xl font-bold text-amber-900 mb-8">
                 {renderTitle(section.title)}
               </h2>
             )}
             <div className="relative">
-              <div className="space-y-8">
+              {/* Add the line first so it appears behind the content */}
+              <div className="absolute left-[21px] top-[24px] bottom-6 w-0.5 bg-gradient-to-b from-amber-300 via-amber-500 to-amber-700"></div>
+              
+              <div className="space-y-6">
                 {section.events.map((event, index) => (
                   <motion.div
                     key={index}
-                    className="flex items-start relative z-10"
-                    initial={{ opacity: 0, x: -60 }}
+                    className="flex items-start relative"
+                    initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.2 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
                   >
-                    {/* Numbered Circle with progressively darker colors */}
-                    <div className="flex-shrink-0">
-                      <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4 shadow-md ${getCircleColor(index)} text-white transition-transform transform hover:scale-110`}>
+                    <div className="flex-shrink-0 mr-6">
+                      <motion.div
+                        className={`w-10 h-10 ${getCircleColor(index)} rounded-full flex items-center justify-center text-white font-bold shadow-md z-10 relative`}
+                        whileHover={{ scale: 1.1 }}
+                        transition={{ duration: 0.2 }}
+                      >
                         {index + 1}
-                      </div>
+                      </motion.div>
                     </div>
-                    {/* Event Details */}
-                    <div className="bg-gray-100 p-5 rounded-lg shadow-inner transition-transform transform hover:translate-y-1">
-                      <h3 className="text-xl font-semibold text-gray-800">{event.title}</h3>
-                      <time className="text-sm text-gray-600">{event.date}</time>
-                      {event.description && <p className="text-gray-600">{event.description}</p>}
-                    </div>
+                    <motion.div
+                      className="flex-grow bg-amber-50 rounded-xl p-6 shadow-soft hover:shadow-lg transition-all duration-300"
+                      whileHover={{ scale: 1.02 }}
+                    >
+                      <h3 className="text-xl font-bold text-amber-900 mb-2">{event.title}</h3>
+                      <time className="text-sm font-medium text-amber-700 mb-2 block">{event.date}</time>
+                      {event.description && (
+                        <p className="text-gray-700 leading-relaxed">{event.description}</p>
+                      )}
+                    </motion.div>
                   </motion.div>
                 ))}
               </div>
-              {/* Vertical line below the circles */}
-              <div className="absolute left-4 bottom-0 w-1 bg-gray-300 h-full z-0"></div>
             </div>
           </div>
         </motion.section>
@@ -170,7 +177,6 @@ const renderSection = (
         </motion.section>
       );
     case 'table':
-      // Redesigned table component
       return (
         <motion.section
           className="mb-8"
@@ -178,43 +184,54 @@ const renderSection = (
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
             {section.title && (
-              <h2 className="text-3xl font-bold text-amber-900 mb-4">
+              <h2 className="text-3xl font-bold text-amber-900 mb-6">
                 {renderTitle(section.title)}
               </h2>
             )}
-            <div className="overflow-x-auto">
-              <table className="min-w-full border-collapse">
+            <div className="overflow-x-auto rounded-xl">
+              <table className="min-w-full">
                 <thead>
                   <tr>
                     {section.headers.map((header, index) => (
                       <th
                         key={index}
-                        className="py-3 px-4 border-b border-gray-200 font-semibold text-gray-800 text-left bg-amber-100 first:rounded-tl-lg last:rounded-tr-lg"
+                        className="bg-gradient-to-br from-amber-100 to-amber-50 first:rounded-tl-xl last:rounded-tr-xl
+                          py-4 px-6 text-left text-amber-900 font-semibold text-lg border-b border-amber-200"
                       >
                         {header}
                       </th>
                     ))}
                   </tr>
                 </thead>
-                <tbody>
+                <tbody className="bg-white">
                   {section.rows.map((row, rowIndex) => (
-                    <tr
+                    <motion.tr
                       key={rowIndex}
-                      className={`${
-                        rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50'
-                      } hover:bg-gray-100 transition-colors`}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: rowIndex * 0.1 }}
+                      className={`
+                        ${rowIndex % 2 === 0 ? 'bg-amber-50/30' : 'bg-white'}
+                        hover:bg-amber-100/50 transition-colors duration-200
+                        ${rowIndex === section.rows.length - 1 ? 'last-row' : ''}
+                      `}
                     >
                       {row.map((cell, cellIndex) => (
                         <td
                           key={cellIndex}
-                          className="py-2 px-4 border-b border-gray-200 text-gray-700 first:rounded-bl-lg last:rounded-br-lg"
+                          className={`
+                            py-4 px-6 text-gray-700 border-b border-amber-100
+                            ${rowIndex === section.rows.length - 1 ? 'border-b-0' : ''}
+                            ${rowIndex === section.rows.length - 1 && cellIndex === 0 ? 'rounded-bl-xl' : ''}
+                            ${rowIndex === section.rows.length - 1 && cellIndex === row.length - 1 ? 'rounded-br-xl' : ''}
+                          `}
                         >
                           {cell}
                         </td>
                       ))}
-                    </tr>
+                    </motion.tr>
                   ))}
                 </tbody>
               </table>
@@ -283,7 +300,7 @@ const WorldBuildingWebsite = () => {
         className="bg-gradient-to-b from-amber-800 to-amber-900 text-amber-50 py-12"
       >
         <div className="container mx-auto px-6 text-center">
-          <p className="text-lg opacity-90">© 2024 Build a World Project</p>
+          <p className="text-lg opacity-90">Built with React. <a href="https://github.com/eyalm2000/build-a-world/blob/main/app/src/App.tsx" className="underline">Source code</a></p>
         </div>
       </motion.footer>
 

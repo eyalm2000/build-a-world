@@ -83,7 +83,7 @@
     {
       "type": "text",
       "title": "Chaos and Wealth Age",
-      "content": "Once humanity reached level 3, there was chaos. Hundreds of millions of people were fired from their jobs just because AI is doing better than them. Money loses meaning. Levels 4 and 5 were reached easily by AGI, and that was the start of the wealth age. AI solved global warming . A little after it discovered a new way to move in space, called “Space Jump” that was faster than the speed of light. The funny thing is that it took all physics experts THREE MONTHS to understand how this tech worked. \n For the first time in history, humanity can move from earth to a better place. After discovering the Space Jump method, we sent millions of spacecraft engineered by ASI to map our galaxy. After a few months (!) we had a lot of better alternatives to earth. We finally choose a star, and call it Orion. And anything else is history."
+      "content": "Once humanity reached level 3, there was chaos. Hundreds of millions of people were fired from their jobs just because AI is doing better than them. Money loses meaning. Levels 4 and 5 were reached easily by AGI, and that was the start of the wealth age. AI solved global warming . A little after it discovered a new way to move in space, called “Space Jump” that was faster than the speed of light. The funny thing is that it took all physics experts THREE MONTHS to understand how this tech worked. \n \n For the first time in history, humanity can move from earth to a better place. After discovering the Space Jump method, we sent millions of spacecraft engineered by ASI to map our galaxy. After a few months (!) we had a lot of better alternatives to earth. We finally choose a star, and call it Orion. And anything else is history."
     },
     {
       "type": "image",
@@ -92,17 +92,53 @@
     },
     {
       "type": "text",
-      "title": "Life in Orion",
-      "content": "In Orion, traditional phones are unnecessary. Instead, people use smart eye lenses called 'Y'...\n  \n 122"
+      "title": "Orion Oriview",
+      "content": "Today, in Orion, there are more than 100 billion people. Orion is way bigger than earth, but don't worry - AI invented superfast flight technology (because space jump is not accurate enough)  - making a circle around the planet is about 2 hours. \n \n Orion is very similar to earth, just a little bigger bigger:"
     },
     {
       "type": "table",
-      "title": "Project Milestones",
-      "headers": ["Milestone", "Description", "Date"],
+      "title": null,
+      "headers": [null, "Orion", "Earth"],
       "rows": [
-        ["Start", "Project kickoff", "January 2023"],
-        ["Development", "Core features development", "March 2023"]
+        ["Size (Diameter)", "14,314 km", "12,756 km"],
+        ["Gravity", "0.998 g", "1 g"],
+        ["Average temperature", "14°C", "15°C"],
+        ["Population", "100 billion", "7.9 billion"],
+        ["Atomsphere", "Same as Earth", "Same as Orion"],
+        ["life", "Plants and animals", "Plants, animals, fungi, humans, etc"],
+        ["Water", "67% of the surface", "73% of the surface"]
       ]
+    },
+    {
+      "type": "text",
+      "title": null,
+      "content": "The reason that Orion is so similar to earth is the reason humanity has chosen him - there are infinite planets to choose from, and there is a huge chance that if we scan all the universe (using the “space jump” method), we will find dozens of planets with life that are surprisingly similar to our lovely earth. And the statistic was working - and the proof for this is humanity’s next lovely planet... Orion! \n \n Orion has beautiful nature and animals, but humans brought a lot of plants and animals from Earth. And labs took with them any kind of animal and planet to Orion and give them a new home. Noah's Ark, remember?"
+    },
+    {
+      "type": "text",
+      "title": "Natural recourses",
+      "content": "Humans build their cities inside Orion’s forests, so it's just a few meters from them. AI invented more efficient and healthy ways to generate power, using atoomic emergy, so the global warming will not happen again and humanity will keep Orion, with its beautiful nature as it is. \n \n Robots grow both new plants from earth and local wild plants in the field or Orion - so food isn’t a problem. We don't need animals anymore - AI founded a way to grow DNA-engineered meat without needing the whole animal. So the animals humanity brought from earth we dropped them at the ocean, the rain forests, the grass fields we just planted and gave them the opportunity to grow. Hello, Evolution - reinvented in a new space."
+    },
+    {
+      "type": "text",
+      "title": "Tech",
+      "content": "In Orion, they don't have phones. It's unnecessary. They are using smart eye lenses called Y - (change this). It feels like magic - the lenses creating a new layer of reality that feels like it's real. You can make the world look like a jungle, or x, or any other place, and the lenses will create a view that warps the real world with what you choose. \n \n The lenses also include cameras and sensors, and you control them with your mind by just. You just have to want something to happen; for example, you think about clicking on the UI element, and it will happen automatically. You can open apps, just like phones, but you can also arrange them anywhere you want in the space. Make calls. Learn, study, and discuss with a personal AI character that knows you better than any person and is running on-device. \n \n It always will be more fun to meet each other physically, but in X there are more ways that are very close to real meeting. Every person has an avatar clone of himself that can appear anywhere using the smart lenses. You just need to choose where you want to go, and boom, you see and feel like you there, using super-practice 3D models of X. Anyone with smart lenses can see and talk to you just like the real world. \n \n That's the reason people stay more and more in their homes, but transportation is still needed - and efficient more than ever. There is a network of the most compact cars ever that are on the road all the time, and you just need to request one using your smart lenses, and it will come to you in about 30 seconds. That car is driving automatically and adapted to the number of people inside. Inside, there aren't just a few rows of seats; the seats are in a circle, and there is a lot of free space. The best - the road accident percentage is about 0%, and there are no traffic jams using smart mapping technology."
+    },
+    {
+      "type": "text",
+      "title": "Society",
+      "content": "In Orion, the society is very similar to earth, but the leap between the richest people and the poorest people is way smaller. In the era of superintelligence, anyone can learn everything for almost free and can do whatever they want with their life. Money isn't hard to get - work is almost for fun. \n \n School is also almost for fun. The teachers are both custom AI characters and real humans, and at a certain level you learn just what you are interested in or what is super important. School is surprisingly still physical - as you know from, ah, how is it called? Covid? It's always better to learn physically, no matter if it's on old meeting tech or in super realistic virtual space.  \n \n In a world of virtuality, the biggest value society values is us - humans, and not screens. People spend a lot of time in their lenses, and every day they leave them at home without any communication device, like a phone, at their hands and meet each other outside, in the beautiful nature of Orion.  "
+    },
+    {
+      "type": "text",
+      "title": "Government",
+      "content": "There is a little government at Orion. It has less power than the democracy method on earth because who has the real power is the people. There is a social media-like app for the smart lenses; using it, every user can vote for suggested laws or suggest their own. Users can discuss (or, more accurately, argue) with each other about political topics, both in virtual spaces and chats, and the app has a smart algorithm that makes sure that it will be fun to scroll at it. "
+  
+    },
+    {
+      "type": "text",
+      "title": "Religion",
+      "content": "In Orion, the religion the people have is atheism. They believe in nature and science because of all the technologies they achieved like ASI, space jump, everything. They still tell famous stories from religions like Noah’s ark, David and Goliath, The Binding of Isaac and more, but they treat them as just stories, as tales and not as real history to believe in. They also, for the same reason, don’t worship any deities or “supernatural” beings because they simply don’t believe in their existence."
     }
   ]
 }
