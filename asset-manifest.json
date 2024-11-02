@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/build-a-world/static/css/main.9fea7a5a.css",
-    "main.js": "/build-a-world/static/js/main.77091b3e.js",
+    "main.css": "/build-a-world/static/css/main.1dc874f2.css",
+    "main.js": "/build-a-world/static/js/main.5c46e6be.js",
     "index.html": "/build-a-world/index.html",
-    "main.9fea7a5a.css.map": "/build-a-world/static/css/main.9fea7a5a.css.map",
-    "main.77091b3e.js.map": "/build-a-world/static/js/main.77091b3e.js.map"
+    "main.1dc874f2.css.map": "/build-a-world/static/css/main.1dc874f2.css.map",
+    "main.5c46e6be.js.map": "/build-a-world/static/js/main.5c46e6be.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fea7a5a.css",
-    "static/js/main.77091b3e.js"
+    "static/css/main.1dc874f2.css",
+    "static/js/main.5c46e6be.js"
   ]
 }
