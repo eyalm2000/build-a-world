@@ -35,6 +35,7 @@ module.exports = {
         spinSlow: 'spin 60s linear infinite',
         float: 'float 6s ease-in-out infinite',
         glow: 'glow 2s ease-in-out infinite',
+        'fade-in-up': 'fadeInUp 0.5s ease-out',
       },
       keyframes: {
         fadeIn: {
@@ -53,6 +54,10 @@ module.exports = {
           '0%, 100%': { opacity: 0.8 },
           '50%': { opacity: 1 },
         },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
       colors: {
         // Define custom colors if needed
@@ -60,6 +65,9 @@ module.exports = {
       boxShadow: {
         'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.1)',
         'glow': '0 0 15px rgba(251, 191, 36, 0.5)',
+      },
+      backdropBlur: {
+        xs: '2px',
       },
     },
   },

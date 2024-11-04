@@ -1,14 +1,24 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaExpand } from 'react-icons/fa'; // Import an icon library
+import { FaExpand, FaSearchPlus, FaSearchMinus } from 'react-icons/fa'; // Import an icon library
 import sections from './sections.json'; // Import the JSON file
 import { SectionsData, Section } from './sections.d'; // Ensure correct file extension
+
+interface ZoomState {
+  imageId: string;
+  scale: number;
+}
 
 const renderSection = (
   section: Section,
   hoveredStep: number | null,
   setHoveredStep: React.Dispatch<React.SetStateAction<number | null>>,
-  setExpandedImage: React.Dispatch<React.SetStateAction<string | null>>
+  setExpandedImage: React.Dispatch<React.SetStateAction<string | null>>,
+  zoomState: ZoomState,
+  handleZoomIn: (imageId: string) => void,
+  handleZoomOut: (imageId: string) => void,
+  showZoomHint: boolean,
+  setShowZoomHint: React.Dispatch<React.SetStateAction<boolean>>
 ) => {
   const renderTitle = (title: string) => {
     return title
@@ -133,13 +143,64 @@ const renderSection = (
             {section.title && (
               <h2 className="text-3xl font-bold text-amber-900 mb-6">{renderTitle(section.title)}</h2>
             )}
-            <img src={section.png} alt={section.title} className="w-full h-auto" />
-            <button
-              onClick={() => setExpandedImage(section.png)}
-              className="absolute bottom-4 right-4 bg-indigo-500 text-white p-3 rounded-full shadow-lg hover:bg-indigo-600 transition-transform transform hover:scale-110"
-            >
-              <FaExpand className="w-5 h-5" />
-            </button>
+            
+            <div className="relative overflow-hidden rounded-2xl">
+              <motion.img
+                src={section.png}
+                alt={section.title}
+                className="w-full h-auto transition-all duration-300 ease-in-out"
+                style={{
+                  transform: `scale(${zoomState.imageId === section.png ? zoomState.scale : 1})`,
+                  transformOrigin: 'center center'
+                }}
+              />
+              
+              <div className="absolute bottom-4 right-4 flex space-x-2">
+                <motion.button
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="bg-amber-600 text-white p-3 rounded-full shadow-lg hover:bg-amber-700 transition-all"
+                  onClick={() => handleZoomOut(section.png)}
+                >
+                  <FaSearchMinus className="w-5 h-5" />
+                </motion.button>
+                
+                <motion.button
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="bg-amber-600 text-white p-3 rounded-full shadow-lg hover:bg-amber-700 transition-all"
+                  onClick={() => handleZoomIn(section.png)}
+                >
+                  <FaSearchPlus className="w-5 h-5" />
+                </motion.button>
+                
+                <motion.button
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="bg-amber-600 text-white p-3 rounded-full shadow-lg hover:bg-amber-700 transition-all"
+                  onClick={() => setExpandedImage(section.png)}
+                >
+                  <FaExpand className="w-5 h-5" />
+                </motion.button>
+              </div>
+
+              {showZoomHint && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="absolute top-4 right-4 bg-black/75 text-white px-4 py-2 rounded-lg text-sm"
+                  onHoverStart={() => setShowZoomHint(false)}
+                >
+                  Use controls to zoom and expand
+                  <button
+                    onClick={() => setShowZoomHint(false)}
+                    className="ml-2 text-amber-400 hover:text-amber-300"
+                  >
+                    ✕
+                  </button>
+                </motion.div>
+              )}
+            </div>
           </div>
         </motion.section>
       );
@@ -250,7 +311,23 @@ const typedSections = sections as SectionsData;
 const WorldBuildingWebsite = () => {
   const [hoveredStep, setHoveredStep] = useState<number | null>(null);
   const [expandedImage, setExpandedImage] = useState<string | null>(null);
-  
+  const [showZoomHint, setShowZoomHint] = useState(true);
+  const [zoomState, setZoomState] = useState<ZoomState>({ imageId: '', scale: 1 });
+
+  const handleZoomIn = (imageId: string) => {
+    setZoomState(prev => ({
+      imageId,
+      scale: prev.imageId === imageId ? Math.min(prev.scale + 0.25, 3) : 1.25
+    }));
+  };
+
+  const handleZoomOut = (imageId: string) => {
+    setZoomState(prev => ({
+      imageId,
+      scale: prev.imageId === imageId ? Math.max(prev.scale - 0.25, 0.5) : 0.75
+    }));
+  };
+
   return (
     <div className="min-h-screen bg-amber-50">
       {/* Enhanced Hero Section */}
@@ -287,7 +364,7 @@ const WorldBuildingWebsite = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: index * 0.1 }}
           >
-            {renderSection(section, hoveredStep, setHoveredStep, setExpandedImage)}
+            {renderSection(section, hoveredStep, setHoveredStep, setExpandedImage, zoomState, handleZoomIn, handleZoomOut, showZoomHint, setShowZoomHint)}
           </motion.div>
         ))}
       </main>
@@ -311,21 +388,48 @@ const WorldBuildingWebsite = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          onClick={() => setExpandedImage(null)}
         >
           <motion.div
-            className="relative"
+            className="relative max-w-[90vw] max-h-[90vh]"
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
             exit={{ scale: 0.8 }}
             transition={{ duration: 0.3 }}
+            onClick={e => e.stopPropagation()}
           >
-            <img src={expandedImage} alt="Expanded" className="max-w-full max-h-full rounded-lg" />
-            <button
-              onClick={() => setExpandedImage(null)}
-              className="absolute top-4 right-4 bg-white text-black p-2 rounded-full shadow-lg hover:bg-gray-200 transition-transform transform hover:scale-105"
-            >
-              Close
-            </button>
+            <img
+              src={expandedImage}
+              alt="Expanded view"
+              className="max-w-full max-h-[90vh] object-contain rounded-2xl"
+              style={{
+                transform: `scale(${zoomState.imageId === expandedImage ? zoomState.scale : 1})`,
+                transition: 'transform 0.3s ease-in-out'
+              }}
+            />
+            
+            <div className="absolute bottom-4 right-4 flex space-x-2">
+              <motion.button
+                className="bg-white/90 text-black p-3 rounded-full shadow-lg hover:bg-white transition-all"
+                onClick={() => handleZoomOut(expandedImage)}
+              >
+                <FaSearchMinus className="w-5 h-5" />
+              </motion.button>
+              
+              <motion.button
+                className="bg-white/90 text-black p-3 rounded-full shadow-lg hover:bg-white transition-all"
+                onClick={() => handleZoomIn(expandedImage)}
+              >
+                <FaSearchPlus className="w-5 h-5" />
+              </motion.button>
+              
+              <motion.button
+                className="bg-white/90 text-black p-3 rounded-full shadow-lg hover:bg-white transition-all"
+                onClick={() => setExpandedImage(null)}
+              >
+                ✕
+              </motion.button>
+            </div>
           </motion.div>
         </motion.div>
       )}
