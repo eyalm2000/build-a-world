@@ -3,7 +3,7 @@
     {
       "type": "text",
       "title": "Introduction",
-      "content": "OpenAI, the creator of the GPT model family, as known as ChatGPT, introduced a few years ago a list of goals to Artificial Superintelligence (ASI), which is AI that can replace huge organizations, like Google and Apple, think better than humans, make breakthroughs in physics, math, and science, and finally can develop and improve itself."
+      "content": "OpenAI, the creator of the GPT model family, also known as ChatGPT, introduced a few years ago a list of goals for Artificial Superintelligence (ASI), which is AI that can replace huge organizations, like Google and Apple. It can think better than humans, make breakthroughs in physics, math, and science, and finally can develop and improve itself."
     },
     {
       "type": "steps",
@@ -25,7 +25,7 @@
         },
         {
           "title": "3. Agents, systems that can take actions",
-          "description": "An AI that is not just thinking; it is living on the computer. It can take continuous actions and run for minutes, days, weeks, and months. For example, you can ask it if time travel is possible, and it will download all the researches on the internet about it, read them, then email famous scientists about it, read their opinion (and write then thank you emails back), write for you key points, make conclusions, and then will return you a complex answer.",
+          "description": "An AI that is not just thinking; it is living on the computer. It can take continuous actions and run for minutes, days, weeks, and months. ",
           "color": "bg-yellow-100",
           "hoverColor": "bg-yellow-200"
         },
@@ -37,7 +37,7 @@
         },
         {
           "title": "5. Organizations: AI that can do the work of an organization",
-          "description": "An AI that can replace organization with thousands of employes. \n This is the level of ASI. An AI that can think, innovate new things and products, write programs with millions of lines of code, and can change the world.",
+          "description": "An AI that can replace organizations with thousands of employees. \n This is the level of ASI. An AI that can think, innovate new things and products, write programs with millions of lines of code, and can change the world.",
           "color": "bg-red-100",
           "hoverColor": "bg-red-200"
         }
@@ -49,8 +49,13 @@
       "content": "Humanity finally reached level 5. Things happen faster and faster. AI explores new rules in physics every day. For the first time in the history of humanity, the sky's the limit. A new era is starting. The era of intelligence. "
     },
     {
-      "type": "timeline",
+      "type": "text",
       "title": "Timeline",
+      "content": "Once humanity reached level 3, there was chaos. Hundreds of millions of people were fired from their jobs just because AI is doing better than them. Money lost meaning. Levels 4 and 5 were reached easily by AGI, and that was the start of the wealth age. AI solved global warming. A little while later it discovered a new way to move in space, called “Space Jump”, that was faster than the speed of light. The funny thing is that it took all physics experts 3 months to understand how this tech worked. \n \n The dream that finally became a reality. Humanity can move from earth to a better place. After discovering the Space Jump method, humanity sent millions of spacecraft engineered by ASI to map our galaxy. After a few months (!) we had a lot of better alternatives to Earth. We finally chose a planet, and called it Orion. And anything else is history."
+    },
+    {
+      "type": "timeline",
+      "title": null,
       "events": [
         {
           "title": "OpenAI released o1, reaching level 2 of AI.",
@@ -81,19 +86,14 @@
       ]
     },
     {
-      "type": "text",
-      "title": null,
-      "content": "Once humanity reached level 3, there was chaos. Hundreds of millions of people were fired from their jobs just because AI is doing better than them. Money loses meaning. Levels 4 and 5 were reached easily by AGI, and that was the start of the wealth age. AI solved global warming . A little after it discovered a new way to move in space, called “Space Jump” that was faster than the speed of light. The funny thing is that it took all physics experts THREE MONTHS to understand how this tech worked. \n \n For the first time in history, humanity can move from earth to a better place. After discovering the Space Jump method, we sent millions of spacecraft engineered by ASI to map our galaxy. After a few months (!) we had a lot of better alternatives to earth. We finally choose a star, and call it Orion. And anything else is history."
-    },
-    {
       "type": "image",
-      "title": "Orion Map",
+      "title": "Orion Overview",
       "png": "/build-a-world/map.png"
     },
     {
       "type": "text",
-      "title": "Orion Overview",
-      "content": "Today, in Orion, there are more than 100 billion people. Orion is way bigger than earth, but don't worry - AI invented superfast flight technology (because space jump is not accurate enough)  - making a circle around the planet is about 2 hours. \n \n Orion is very similar to earth, just a little bigger bigger:"
+      "title": null,
+      "content": "Today, in Orion, there are more than 10 billion people. Orion is a little bigger than Earth, but don't worry - AI invented superfast flight technology (because Space Jump is not accurate enough, and sometimes it will throw you thousands of kilometers from your destination). Making a circle around the planet is about 2 hours. \n \n Orion is very similar to Earth, just a little bigger:"
     },
     {
       "type": "table",
@@ -102,43 +102,64 @@
       "rows": [
         ["Size (Diameter)", "14,314 km", "12,756 km"],
         ["Gravity", "0.998 g", "1 g"],
-        ["Average temperature", "14°C", "15°C"],
-        ["Population", "100 billion", "7.9 billion"],
+        ["Average temperature", "14.3°C", "15°C"],
+        ["Population", "10 billion", "8 billion"],
         ["Atomsphere", "Same as Earth", "Same as Orion"],
-        ["life", "Plants and animals", "Plants, animals, fungi, humans, etc"],
-        ["Water", "67% of the surface", "73% of the surface"]
+        ["Life (things that were there naturally)", "Plants and animals", "Plants, animals, fungi, humans, etc"],
+        ["Water", "67% of the surface", "73% of the surface"],
+        ["Day length", "25.3 hours", "24 hours"],
+        ["Year length", "312 earth days", "365 earth days"]
       ]
     },
     {
       "type": "text",
       "title": null,
-      "content": "The reason that Orion is so similar to earth is the reason humanity has chosen him - there are infinite planets to choose from, and there is a huge chance that if we scan all the universe (using the “space jump” method), we will find dozens of planets with life that are surprisingly similar to our lovely earth. And the statistic was working - and the proof for this is humanity’s next lovely planet... Orion! \n \n Orion has beautiful nature and animals, but humans brought a lot of plants and animals from Earth. And labs took with them any kind of animal and planet to Orion and give them a new home. Noah's Ark, remember?"
+      "content": "The reason that Orion is so similar to Earth is the reason humanity has chosen him. The universe is huge. There are infinite planets to choose from, and there is a huge chance that if we scan the universe (using the “Space Jump” method), we will find dozens of planets with life that are surprisingly similar to our lovely earth. And the statistics were working - and the proof for this is humanity’s current lovely planet Orion! \n \n Orion has beautiful nature and animals, but humans brought a lot of plants and animals from Earth. And labs took with them any kind of animal and planet to Orion and gave them a new home. Noah's Ark, remember?"
     },
     {
       "type": "text",
       "title": "Natural recourses",
-      "content": "Humans build their cities inside Orion’s forests, so it's just a few meters from them. AI invented more efficient and healthy ways to generate power, using atoomic emergy, so the global warming will not happen again and humanity will keep Orion, with its beautiful nature as it is. \n \n Robots grow both new plants from earth and local wild plants in the field or Orion - so food isn’t a problem. We don't need animals anymore - AI founded a way to grow DNA-engineered meat without needing the whole animal. So the animals humanity brought from earth we dropped them at the ocean, the rain forests, the grass fields we just planted and gave them the opportunity to grow. Hello, Evolution - reinvented in a new space."
+      "content": "Humans build their cities inside Orion’s forests, so nature is just a few meters from them. AI invented more efficient and healthy ways to generate power, using atomic energy. For sure -  global warming will not happen again and humanity will keep Orion, with its beautiful nature as it is. \n \n Robots grow both new plants from Earth and local plants in the fields of Orion - so food isn’t a problem. Humans don't need to eat animals anymore - AI found a way to grow DNA-engineered meat without needing the whole animal. The animals humanity brought from the earth dropped at the ocean, the rain forests, the grass fields we just planted. Now animals can grow and evolve in their new home. Hello, Evolution - reinvented in a new space. \n \n Orion is a little colder than Earth, but similar to Earth, most people live in “stable” areas, and most of the time the weather is very comfortable. 33% of days there is rain - sometimes, sometimes not -  there are no seasons similar to Earth, but it's fine."
     },
     {
       "type": "text",
       "title": "Tech",
-      "content": "In Orion, they don't have phones. It's unnecessary. They are using smart eye lenses called Y - (change this). It feels like magic - the lenses creating a new layer of reality that feels like it's real. You can make the world look like a jungle, or x, or any other place, and the lenses will create a view that warps the real world with what you choose. \n \n The lenses also include cameras and sensors, and you control them with your mind by just. You just have to want something to happen; for example, you think about clicking on the UI element, and it will happen automatically. You can open apps, just like phones, but you can also arrange them anywhere you want in the space. Make calls. Learn, study, and discuss with a personal AI character that knows you better than any person and is running on-device. \n \n It always will be more fun to meet each other physically, but in X there are more ways that are very close to real meeting. Every person has an avatar clone of himself that can appear anywhere using the smart lenses. You just need to choose where you want to go, and boom, you see and feel like you there, using super-practice 3D models of X. Anyone with smart lenses can see and talk to you just like the real world. \n \n That's the reason people stay more and more in their homes, but transportation is still needed - and efficient more than ever. There is a network of the most compact cars ever that are on the road all the time, and you just need to request one using your smart lenses, and it will come to you in about 30 seconds. That car is driving automatically and adapted to the number of people inside. Inside, there aren't just a few rows of seats; the seats are in a circle, and there is a lot of free space. The best - the road accident percentage is about 0%, and there are no traffic jams using smart mapping technology."
+      "content": "On Orion, they don't have phones. It's pointless. They are using smart eye lenses. It feels like magic - the lenses create a new layer of reality that feels real. The user can make the world look like a jungle, sci-fi city, or any other place, and the lenses will create a view that warps the real world with what the user chooses. \n \n The lenses also include cameras, sensors, and a powerful computer, and the user controls them with his mind. The user just has to want something to happen; for example, the user thinks about clicking on a button, or marking a piece of text, and it will happen automatically. The user can open apps, just like phones, but he can also arrange them anywhere you want in the space. Make calls. Learn, study, and discuss with a personal AI character who knows you better than any person and is running on-device. \n \n It always will be more fun to meet each other physically, but on Orion, there are more ways that are very close to real meetings. Every person has a realistic avatar clone of himself that can appear anywhere using the smart lenses. The user just needs to choose where they want to go, and boom, he sees and feels like he is there, using super-practice 3D models of Orion. Anyone with smart lenses can see and talk to anyone else just like the real world. \n \n Affected by the smart lenses technology, people stay more and more in their homes, but transportation is still needed - and efficient more than ever. There is a network of the most compact cars ever made, and anyone that needs a car can just request one with their smart lenses, and it will come to them in about 30 seconds. That car is driving automatically and adapted to the people inside. There aren't just a few rows of seats; the seats are in a circle, and there is a lot of free space. The best - the road accident percentage is about 0.001%, and there are no traffic jams using advanced mapping technology."
     },
     {
       "type": "text",
-      "title": "Society",
-      "content": "In Orion, the society is very similar to earth, but the leap between the richest people and the poorest people is way smaller. In the era of superintelligence, anyone can learn everything for almost free and can do whatever they want with their life. Money isn't hard to get - work is almost for fun. \n \n School is also almost for fun. The teachers are both custom AI characters and real humans, and at a certain level you learn just what you are interested in or what is super important. School is surprisingly still physical - as you know from, ah, how is it called? Covid? It's always better to learn physically, no matter if it's on old meeting tech or in super realistic virtual space.  \n \n In a world of virtuality, the biggest value society values is us - humans, and not screens. People spend a lot of time in their lenses, and every day they leave them at home without any communication device, like a phone, at their hands and meet each other outside, in the beautiful nature of Orion.  "
+      "title": "Activities for fun",
+      "content": "A lot of activities are very similar to activities on Earth. People still play outdoor games like tag, hide and seek, 3 sticks and more, but they play them using the smart lenses to create a better experience, for example: In hide and seek, they can use the lenses to create and customize maps and areas to play in, making a more creative and enjoyable experience. \n \n They also talk and just spend time with each other because, well, They’re humans after all. They also enjoy reading books, newspapers, magazines and all sorts of interesting and entertaining things. \n \n They also use their smart lenses to play video games in first person, using a virtual reality feature the lenses have. For safety measures, they play in a special room made to prevent any physical injuries, while still keeping the experience very entertaining and immersive. "
     },
     {
       "type": "text",
-      "title": "Government",
-      "content": "There is a little government at Orion. It has less power than the democracy method on earth because who has the real power is the people. There is a social media-like app for the smart lenses; using it, every user can vote for suggested laws or suggest their own. Users can discuss (or, more accurately, argue) with each other about political topics, both in virtual spaces and chats, and the app has a smart algorithm that makes sure that it will be fun to scroll at it. "
-  
+      "title": "Clothes",
+      "content": "Unnecessary. Kind of. \n Why do people want to wear real clothes when they can customize their look using their smart lenses? People just wear simple, white clothes, which no one with smart lenses can see, and customize them using their smart lenses. When you wear smart lenses, you can change how you look by picking virtual clothes that match your style. "
+    },
+    {
+      "type": "text",
+      "title": "Culture and Society",
+      "content": "On Orion, the society is very similar to Earth, but the leap between the richest and poorest people is way smaller. In the era of superintelligence, anyone can learn everything for almost free and can do whatever they want with their life. Money is easy to get - work is almost for fun. \n \n School is also almost for fun. The teachers are both custom AI characters and real humans. At a certain level, the students learn just what they are interested in or what is very important. School is surprisingly still physical - as you know from, ah, how is it called? Covid? It's always better to learn physically, no matter if it's on Zoom or in a super realistic virtual space. \n \n In a world of virtuality, the biggest value society values is us - humans, and not screens. People spend a lot of time in their lenses, and every day they leave them at home. Without any communication device or a phone, they go outside and take a break from the digital life in the beautiful nature of Orion. \n \n Since humans don’t need to eat animals anymore and they don’t need leather or fur for clothes, humans on Orion let the animals live in nature or keep them as pets, depending on the species. Some species, like cats and dogs, are species that people keep as pets, and treat them well as pets (give them a comfy place to sleep, an adequate amount of food and treat them with love and care) but not only as pets, because they want at least a part of their species to be in nature so they don’t evolve into being unable to survive in the wild. Humans also don’t have zoos because come on, keeping animals hostage against their will in 2034? What is this, the 20th century? \n \n They treat their young with love, care, affection and help them grow and develop whenever they need help like in school, or anything else. As for their old? They treat them with respect and help them when they’re in nursing homes, or anywhere else. The perspective on old and young has changed much from earth Orion."
     },
     {
       "type": "text",
       "title": "Religion",
-      "content": "In Orion, the religion the people have is atheism. They believe in nature and science because of all the technologies they achieved like ASI, space jump, everything. They still tell famous stories from religions like Noah’s ark, David and Goliath, The Binding of Isaac and more, but they treat them as just stories, as tales and not as real history to believe in. They also, for the same reason, don’t worship any deities or “supernatural” beings because they simply don’t believe in their existence."
+      "content": "On Orion, the religion the people have is atheism. They believe in nature and science because of all the technologies they achieved like ASI, the space jump method, everything. They still tell famous stories from religions like Noah’s ark, David and Goliath, The Binding of Isaac and more, but they treat them as just stories, as tales and not as real history to believe in. They also, for the same reason, don’t worship any deities or “supernatural” beings because they simply don’t believe in their existence."
+    },
+    {
+      "type": "text",
+      "title": "Language",
+      "content": "All of Orion’s residents speak English. It's just a lot more comfortable that anyone is speaking the same language, and since people do not believe in god, they don't care which language they speak. English is still the most popular, and now the single language in the world. \n \n Any other language that isn't English is stored in The Languages Archive, which includes every text ever written in any language that ever exists. People can use The Languages Archive to learn new languages for fun, with a little help from their personal AI teacher."
+    },
+    {
+      "type": "text",
+      "title": "Government",
+      "content": "There is a little government on Orion. It has less power than the popular democracy method on earth because who has the most power are the people. There is a social media-like app for the smart lenses; using it, every user can vote for suggested laws or suggest their own. Users can discuss (or, more accurately, argue) with each other about political topics, both in virtual spaces and chats, and the app has a smart algorithm that makes sure that it will be fun to scroll at, but not too addictive."
+    },
+    {
+      "type": "text",
+      "title": "Rules and Punishments",
+      "content": "There are a lot of rules on Orion, but the most popular rules are from the Ten Commandments. People discovered that these rules are still relevant and important today. Some of them are enforced by the government, and some are not. Most of the time there are no crimes at all but when there are the punishment is very tough, about 1 month to 20 years ban from the smart lenses. Trust me, this is the worst nightmare of every Orion resident. "
     }
   ]
 }
